@@ -1,7 +1,7 @@
 # Encuentra los números pares
 # Escribe una función que reciba un número y retorne todos los
 # números pares desde 0 hasta ese número.
-from imp import new_module
+# from imp import new_module
 
 
 # def ever_num(num):
@@ -51,19 +51,47 @@ from imp import new_module
 # Reverso de una Cadena
 # Crea una función que tome una cadena y devuelva su reverso.
 
-def phrase(word):
-    return word[::-1]
+# def phrase(word):
+#     return word[::-1]
+#
+#
+# print(phrase("Hola"))
 
+#
+# Número Palíndromo
+# Dado un número, crea una función que determine si es un número palíndromo
+# (se lee igual de izquierda a derecha que de derecha a izquierda).
 
-print(phrase("Hola"))
+# nums = [2,33,456,6765,77,896,1221]
+# new_num = []
+#
+# def pal(num):
+#     for i in num:
+#         if str(i) == str(i)[::-1]:
+#             new_num.append(i)
+#     return  new_num
+#
+# print(pal(nums))
 
+# ¿Es Primo?
+# Escribe una función que determine si un número es primo o no.
 
+prime_nums = [2,3,5,7,11,13,15,17,19,21,28,35]
 
+def prime(nums):
+    new_primes = []
 
+    for num in nums:
+        if num < 2:
+            continue
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            new_primes.append(num)
+    return new_primes
 
-
-
-
+print(prime(prime_nums))
 
 
 
