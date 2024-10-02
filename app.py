@@ -53,10 +53,49 @@ pals = [3,55,67,322,1221,7889,565]
 #
 # print(max_and_min(list_nums))
 
+# Suma de Pares en un Arreglo
+# Crea una función que sume todos los números pares de un arreglo.
 
+# evers = [2,45,66,22,44,66,85,32,77,8534]
+#
+# def ever_sum(nums):
+#     new_ever_sum = 0
+#
+#     for num in nums:
+#         if num % 2 == 0:
+#             new_ever_sum += num
+#     return new_ever_sum
+#
+# print(ever_sum(evers))
 
+# Factorial de un Número
+# Escribe una función que calcule el factorial de un número dado.
 
+# def factorial(num):
+#     new_factorial = 1
+#
+#     for i in range(1, num -1):
+#         new_factorial *= i
+#
+#     return new_factorial
+#
+# print(factorial(5))
 
+# Fibonacci
+# Escribe un programa que devuelva el n-ésimo número de la serie de Fibonacci.
+
+def fibonnaci(num):
+    if num <= 0:
+        return "Ingresa un nuevo número"
+
+    new_fibo = [0, 1]
+
+    for i in range(2, num):
+        next_fibo = new_fibo[i-1] + new_fibo[i-2]
+        new_fibo.append(next_fibo)
+    return new_fibo[:i]
+
+print(fibonnaci(20))
 
 
 
