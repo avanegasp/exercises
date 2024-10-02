@@ -33,11 +33,27 @@ pals = [3,55,67,322,1221,7889,565]
 #
 # print(palindromo(pals))
 
-def palindromo(nums):
-    new_pal = [num for num in nums if str(num) == str(num)[::-1]]
-    return new_pal
+# def palindromo(nums):
+#     new_pal = [num for num in nums if str(num) == str(num)[::-1]]
+#     return new_pal
+#
+# print(palindromo(pals))
 
-print(palindromo(pals))
+# Máximo y Mínimo en un Arreglo
+# Escribe un programa que reciba un arreglo de números
+# y retorne el número más grande y el más pequeño.
+
+# list_nums = [2,55,74,26,88,443,89,326]
+#
+# def max_and_min(nums):
+#     max_num = max(nums)
+#     min_num = min(nums)
+#
+#     return max_num, min_num
+#
+# print(max_and_min(list_nums))
+
+
 
 
 
