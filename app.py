@@ -57,11 +57,11 @@
 # retorne la suma de todos los dígitos de un número dado, por ejemplo:
 # 5646 => 5+6+4+6 => 21
 
-def retnum(num):
-    new_num = 0
+def suma_digitos(num):
+    digitos = str(num)
 
-    for i in :
-        new_num += i
-    return new_num
+    suma = sum(int(digito) for digito in digitos)
 
-print(retnum(10))
+    return suma
+
+print(suma_digitos(5646))
