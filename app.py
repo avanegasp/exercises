@@ -1,108 +1,67 @@
-# Encuentra los números pares
-# Escribe una función que reciba un número y retorne
-# todos los números pares desde 0 hasta ese número.
+# Si listamos todos los números por debajo del 10
+# que son múltiplos de 3 o 5 obtenemos: 3, 5, 6 y 9.
+# La suma de estos múltiplos es 23. Realice un algoritmo
+# para encontrar la suma de todos los
+# múltiplos de 3 o 5 por debajo de 1000.
 
 
-# def ever_num(num):
-#     new_ever = []
-#     for i in range(0, num, 1):
-#         if i % 2 == 0:
-#             new_ever.append(i)
-#     return new_ever
-
-# def ever_num(num):
-#     new_ever = [i for i in range(0, num, 1) if i % 2 == 0]
-#     return new_ever
+# def num_sum(num):
+#     new_num = 0
 #
-# print(ever_num(20))
-
+#     for i in range(0, num +1):
+#         if i % 3 == 0 or i % 5 == 0:
+#             new_num += i
+#     return new_num
 #
-# Número Palíndromo
-# Dado un número, crea una función que determine si es un número palíndromo
-# (se lee igual de izquierda a derecha que de derecha a izquierda).
+# print(num_sum(1000))
 
-pals = [3,55,67,322,1221,7889,565]
+# Escriba una rutina que imprima los números del 1 al 100 pero:
+# cuando el número sea múltiplo de 3, imprima “Tic”, en lugar del número.
+# Cuando el número sea múltiplo de 5, imprima “Toc”, en lugar del número.
+# Cuando el número sea múltiplo tanto de 3 como de 5, imprima “TicToc”, en lugar del número.
 
-# def palindromo(nums):
-#     new_pal = []
+# def tic_toc(num):
 #
-#     for num in nums:
-#         if str(num) == str(num)[::-1]:
-#             new_pal.append(num)
-#     return new_pal
+#     for i in range(1, num +1):
+#         if i % 3 == 0 and i % 5 == 0:
+#             print(i, "TicToc")
+#         elif i % 5 == 0:
+#             print(i, "Toc")
+#         elif i % 3 == 0:
+#             print(i, "Tic")
+#         else:
+#             print(i, "Otro")
 #
-# print(palindromo(pals))
+# print(tic_toc(100))
 
-# def palindromo(nums):
-#     new_pal = [num for num in nums if str(num) == str(num)[::-1]]
-#     return new_pal
+# Haga un programa que filtre el arreglo y devuelva un arreglo
+# con solo el nombre de sus amigos. Si un nombre tiene exactamente
+# 4 letras, puedes estar seguro que es amigo tuyo! De lo contrario,
+# puede estar seguro de que no…
 #
-# print(palindromo(pals))
+# Amigo = [“Ryan”, “Kieran”, “Mark”, “Miguel”]  Deberia [“Ryan”, “Mark”]
 
-# Máximo y Mínimo en un Arreglo
-# Escribe un programa que reciba un arreglo de números
-# y retorne el número más grande y el más pequeño.
-
-# list_nums = [2,55,74,26,88,443,89,326]
+# friends = ["Ryan", "Kieran", "Mark", "Miguel"]
 #
-# def max_and_min(nums):
-#     max_num = max(nums)
-#     min_num = min(nums)
+# def splitname(names):
+#     new_friends = []
 #
-#     return max_num, min_num
+#     for i in names:
+#         if len(i) == 4:
+#             new_friends.append(i)
+#     return new_friends
 #
-# print(max_and_min(list_nums))
+# print(splitname(friends))
 
-# Suma de Pares en un Arreglo
-# Crea una función que sume todos los números pares de un arreglo.
+# Escribe una función llamada sumaDigitos que
+# retorne la suma de todos los dígitos de un número dado, por ejemplo:
+# 5646 => 5+6+4+6 => 21
 
-# evers = [2,45,66,22,44,66,85,32,77,8534]
-#
-# def ever_sum(nums):
-#     new_ever_sum = 0
-#
-#     for num in nums:
-#         if num % 2 == 0:
-#             new_ever_sum += num
-#     return new_ever_sum
-#
-# print(ever_sum(evers))
+def retnum(num):
+    new_num = 0
 
-# Factorial de un Número
-# Escribe una función que calcule el factorial de un número dado.
+    for i in :
+        new_num += i
+    return new_num
 
-# def factorial(num):
-#     new_factorial = 1
-#
-#     for i in range(1, num -1):
-#         new_factorial *= i
-#
-#     return new_factorial
-#
-# print(factorial(5))
-
-# Fibonacci
-# Escribe un programa que devuelva el n-ésimo número de la serie de Fibonacci.
-
-def fibonnaci(num):
-    if num <= 0:
-        return "Ingresa un nuevo número"
-
-    new_fibo = [0, 1]
-
-    for i in range(2, num):
-        next_fibo = new_fibo[i-1] + new_fibo[i-2]
-        new_fibo.append(next_fibo)
-    return new_fibo[:i]
-
-print(fibonnaci(20))
-
-
-
-
-
-
-
-
-
-
+print(retnum(10))
