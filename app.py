@@ -65,3 +65,4 @@ def suma_digitos(num):
     return suma
 
 print(suma_digitos(5646))
+print(suma_digitos(5655346))
