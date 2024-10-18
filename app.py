@@ -44,5 +44,11 @@ def friends_mine(friends):
 
     new_friends = []
 
+    for i in range(1, friends+1):
+        if len(i) == 4:
+            new_friends.append(i)
+    return new_friends
+
+print(friends_mine(["Ryan", "Kieran", "Mark", "Miguel"]))
 
 
