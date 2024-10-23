@@ -49,6 +49,6 @@ def friends_mine(friends):
             new_friends.append(i)
     return new_friends
 
-print(friends_mine(["Ryan", "Kieran", "Mark", "Miguel", "Peter"]))
+print(friends_mine(["Ryan", "Kieran", "Mark", "Miguel", "Peter", "Ramón"]))
 
 
